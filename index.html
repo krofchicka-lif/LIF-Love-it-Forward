@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script src="lif-base.js"></script>
+<script src="lif-motion.js"></script>
+</helmet>
+
+<div style="background:#FDFCF8;color:#2F2B2B;font-family:'Apercu',Arial,Helvetica,sans-serif;text-wrap:pretty;overflow:hidden;position:relative">
+
+<header style="position:relative;background:#FDFCF8;z-index:60">
+  <div data-wrap="1" style="padding:20px clamp(13.76px,3.12vw,38.48px);display:flex;flex-wrap:wrap;align-items:center;gap:12px 26px">
+    <a href="index.html" style="display:flex;align-items:center;gap:9px;margin-right:auto">
+      <img src="assets/sol-mark-ink.png" alt="LIF Sol mark" style="height:24px;width:auto;flex-shrink:0;display:block;object-fit:contain" />
+      <img src="assets/lif-wordmark-ink.png" alt="Love It Forward" style="height:21px;width:auto;aspect-ratio:773/441;flex-shrink:0;display:block;object-fit:contain" />
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(13.76px,1.72vw,22.2px)">
+      <a href="index.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">HOME</a>
+      <a href="brands.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">FOR BRANDS</a>
+      <a href="about.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">ABOUT</a>
+    </nav>
+  </div>
+</header>
+
+<section data-screen-label="Hero" data-g12="1" data-wrap="1" style="position:relative;background:#F3A43A url('assets/tex-sol.jpg') center/cover no-repeat;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(44px,6.4vh,78px) clamp(13.76px,3.12vw,38.48px)">
+  <div style="grid-column:1 / span 5;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(20px,3vh,36px) 0">
+    <h1 style="font:400 clamp(40px,4.8vw,80px)/0.98 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:5ch;margin-bottom:clamp(28px,3.6vh,36px)">LOVE MOVES.</h1>
+    <a href="#introduction" onClick="{{ toIntroduction }}" style="display:inline-block;background:#CA0000 url('assets/tex-poppy.jpg') center/cover;color:#FFFFFF;padding:0.42em 0.78em 0.5em;border-radius:0;font:400 clamp(18px,1.7vw,26px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.012em;white-space:nowrap;box-shadow:inset 0 0 0 999px rgba(190,0,0,.28);outline-offset:4px" style-hover="box-shadow:inset 0 0 0 999px rgba(150,0,0,.46);color:#FFFFFF" style-focus="outline:3px solid #2F2B2B;color:#FFFFFF">LOVE IT FORWARD</a>
+  </div>
+  <div style="grid-column:7 / span 6;min-width:0;line-height:0">
+    <img src="assets/photo-eyeshadow.jpg" alt="A woman laughing, blue eyeshadow" style="width:100%;height:clamp(320px,52vh,520px);object-fit:cover;object-position:center 32%;display:block" />
+  </div>
+</section>
+
+<section data-screen-label="Opening" style="padding:clamp(34px,5vh,58px) clamp(13.76px,3.12vw,38.48px) clamp(10px,1.6vh,16px)">
+  <p style="font:400 clamp(19px,1.8vw,25px)/1.45 'Apercu',Arial,Helvetica,sans-serif;max-width:60ch">It always has. We just built somewhere for it to go.</p>
+</section>
+
+<section data-screen-label="The Truth" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(40px,6vh,80px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:20ch;margin-bottom:0.2em">THIS BEHAVIOUR IS AS OLD AS PEOPLE.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:46ch">Someone experiences something. And immediately, before they even finish experiencing it, they think of someone else.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000;max-width:62ch"><span style="white-space:nowrap">You would love this.</span> <span style="white-space:nowrap">This one&rsquo;s for you.</span> <span style="white-space:nowrap">You have to feel this.</span></p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:46ch">That thought is the most powerful moment in commerce. It&rsquo;s also the one nobody built infrastructure for. Until now.</p>
+  </div>
+  <div style="grid-column:7 / span 6;min-width:0;line-height:0">
+    <img src="assets/photo-two-women.jpg" alt="Two friends laughing together" style="width:100%;height:auto;display:block" />
+  </div>
+</section>
+
+<section id="introduction" data-screen-label="The Product" style="padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:22ch;margin-bottom:0.2em">LOVE IT FORWARD IS AN <span style="background:#CA0000 url('assets/tex-poppy.jpg') center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">INTRODUCTION</span>.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Not a referral. Not a reward. Not a campaign mechanic. An introduction.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Someone who loves what you do chooses someone they love, writes them something real and puts something behind it.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">The receiver opens it and finds a person, not a brand. A note from someone who knows them. That changes everything before they even arrive.</p>
+  </div>
+</section>
+
+<section data-screen-label="The Reveal" data-g12="1" data-wrap="1" style="background:#FFFFFF;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(28px,4vh,44px) clamp(20px,2.4vw,34px);padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 5;min-width:0;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:16ch;margin-bottom:0.2em">THIS IS THE MOMENT.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Someone in your life thought of you. Specifically. By name. They wrote you something in their own words, and they put something real toward an experience they wanted you to have.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You have a message from someone who loves you. At first, you only know someone chose you. Then comes the reveal.</p>
+    <p style="font:400 clamp(26px,2.5vw,38px)/1.16 'Romana BT',Georgia,serif;letter-spacing:-0.022em;color:#CA0000">It was Amy.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">And you read why.</p>
+  </div>
+
+  <div style="grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:clamp(20px,2.8vh,28px)">
+    <div data-r="1" style="opacity:0;filter:blur(14px);transform:translateY(10px);transition:opacity .9s ease,filter 1.1s cubic-bezier(.2,.75,.2,1),transform 1.1s cubic-bezier(.2,.75,.2,1);line-height:0">
+      <img src="assets/eph-note.jpg" alt="A handwritten note from Amy" style="width:100%;height:auto;display:block" />
+    </div>
+    <div style="display:flex;flex-direction:column;gap:0.75em;max-width:52ch">
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Not a brand message. Not copy written for everyone. Something written for you.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You haven&rsquo;t arrived yet. You already belong.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="Trust headline" style="background:#F3A43A url('assets/tex-sol.jpg') center/cover no-repeat;padding:clamp(60px,10vh,132px) clamp(13.76px,3.12vw,38.48px)">
+  <h2 data-wrap="1" style="font:400 clamp(34px,4.2vw,72px)/1.02 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:16ch;text-align:center;margin-left:auto;margin-right:auto;">THE TRUST WAS ALREADY THERE.</h2>
+</section>
+
+<section data-screen-label="Why It Works" style="padding:clamp(44px,6.6vh,82px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.75em">
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Love It Forward doesn&rsquo;t manufacture the relationship. That already exists. You already trust the person who sent it. You already believe what they&rsquo;re telling you.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Being thought of feels good. Doing something for someone feels good. <span style="white-space:nowrap">Love It Forward</span> just gives those feelings somewhere to go.</p>
+  </div>
+</section>
+
+<section data-screen-label="The Loop" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(40px,6vh,80px) clamp(13.76px,3.12vw,38.48px)">
+  <div style="grid-column:1 / span 6;min-width:0;line-height:0">
+    <img src="assets/photo-two-girls.jpg" alt="Two smiling women cheek to cheek" style="width:100%;height:auto;display:block" />
+  </div>
+  <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(22px,2vw,30px)/1.14 'Romana BT',Georgia,serif;letter-spacing:-0.02em;margin-bottom:0.1em">AND THEN</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:40ch">Someone else comes to mind. You know exactly who. So you choose them, you write them something real and you put something behind it.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:40ch">A new Love It Forward begins. New person. New reason. New act.</p>
+    <h2 style="font:400 clamp(26px,2.6vw,40px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em;max-width:20ch;margin:0.35em 0 0.1em">THE RECEIVER BECOMES THE GIVER.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:47ch">Not because anyone asked. Not because there&rsquo;s something in it for them. Because being genuinely thought of makes you want someone else to feel it too.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">Love moves.</p>
+  </div>
+</section>
+
+<section data-screen-label="What You Started" style="padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(30px,3.2vw,50px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:20ch;margin-bottom:0.2em">AND YOU GET TO KNOW IT MATTERED.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You can see: Jody chose something. Jody sent love back. And if Jody chooses someone else: <span style="color:#CA0000;white-space:nowrap">Jody Loved It Forward.</span></p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You don&rsquo;t see who she chose. You don&rsquo;t see what she wrote. That belongs to them. But you know what you started is still moving.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">And when it stops, it stops. No pressure. No obligation. Just the pleasure of knowing something thoughtful you did travelled further than you.</p>
+  </div>
+</section>
+
+<section data-screen-label="What Makes This Different" style="padding:clamp(20px,3vh,36px) clamp(13.76px,3.12vw,38.48px) clamp(52px,8vh,100px)">
+  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.75em">
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:22ch;margin-bottom:0.2em"><span style="display:block">NO INCENTIVE.</span><span style="display:block">NO POINTS.</span><span style="display:block">NO REFERRAL CODE.</span></h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Just a person thinking of another person, with a way to do something about it.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">People keep the meaning. The brand sees the movement.</p>
+  </div>
+</section>
+
+<section data-screen-label="Close" style="position:relative;background:#CA0000 url('assets/tex-poppy.jpg') center/cover no-repeat;padding:clamp(56px,9vh,116px) clamp(13.76px,3.12vw,38.48px)">
+  <div style="position:absolute;inset:0;background:rgba(190,0,0,.4);pointer-events:none"></div>
+  <div data-wrap="1" style="position:relative;max-width:58ch;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.75em">
+    <h2 style="font:400 clamp(32px,3.8vw,60px)/1.04 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:18ch;margin-bottom:0.2em">CULTURE TRAVELS THROUGH PEOPLE.</h2>
+    <p style="font:400 clamp(17px,1.4vw,19px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">So does love.</p>
+    <p style="font:400 clamp(17px,1.4vw,19px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;max-width:38ch"><span style="display:inline-block">Real community doesn&rsquo;t come from campaigns.</span> <span style="display:inline-block">It comes from <span style="white-space:nowrap">people bringing people in.</span></p>
+    <p style="font:400 clamp(17px,1.4vw,19px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;max-width:34ch">Love It Forward is what that looks like when it has <span style="white-space:nowrap">somewhere to go.</span></p>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px;margin-top:0.6em">
+      <a href="brands.html" style="background:#FFFFFF;color:#CA0000;padding:16px 24px;border-radius:2px;font:700 12px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em" style-hover="background:#F3A43A;color:#2F2B2B">FOR BRANDS</a>
+      <a href="about.html" style="border:1px solid #FFFFFF;color:#FFFFFF;padding:16px 24px;border-radius:2px;font:700 12px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em" style-hover="background:#FFFFFF;color:#CA0000">ABOUT LIF</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div data-wrap="1" style="padding:clamp(24px,3.1vh,38px) clamp(13.76px,3.12vw,38.48px);display:flex;flex-wrap:wrap;gap:22px 44px;align-items:flex-end;justify-content:space-between">
+    <div style="display:flex;flex-direction:column;align-items:flex-start;gap:14px;flex-shrink:0">
+      <img src="assets/lif-wordmark-ink.png" alt="Love It Forward" style="height:34px;width:auto;aspect-ratio:773/441;flex-shrink:0;display:block;object-fit:contain" />
+      <p style="font:700 13px/1.4 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.02em;color:#CA0000">Have love. Will share.</p>
+    </div>
+    <nav style="display:flex;flex-wrap:wrap;gap:12px 26px">
+      <a href="index.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">HOME</a>
+      <a href="brands.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">FOR BRANDS</a>
+      <a href="about.html" style="font:700 11px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.16em">ABOUT</a>
+    </nav>
+  </div>
+</footer>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;drift&quot;,&quot;still&quot;],&quot;default&quot;:&quot;drift&quot;,&quot;tsType&quot;:&quot;'drift' | 'still'&quot;,&quot;section&quot;:&quot;Art direction&quot;}}">
+class Component extends DCLogic {
+  componentDidMount() { this.boot(0); }
+  componentDidUpdate() { this.boot(0); }
+  boot(t) {
+    if (window.LIFMotion) return window.LIFMotion.init(document, { still: this.props.motion === 'still' });
+    if (t < 30) setTimeout(() => this.boot(t + 1), 100);
+  }
+  renderVals() {
+    return {
+      toIntroduction: (e) => {
+        const el = document.getElementById('introduction');
+        if (!el) return;
+        e.preventDefault();
+        const scroller = document.scrollingElement || document.documentElement;
+        const start = window.scrollY || scroller.scrollTop || document.body.scrollTop || 0;
+        const target = el.getBoundingClientRect().top + start;
+        const jump = (y) => {
+          window.scrollTo(0, y);
+          scroller.scrollTop = y;
+          document.body.scrollTop = y;
+        };
+        const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduce) return jump(target);
+        const dur = 520, t0 = performance.now();
+        const step = (now) => {
+          const p = Math.min(1, (now - t0) / dur);
+          jump(start + (target - start) * (p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2));
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+      }
+    };
+  }
+}
+</script>
+</body>
+</html>
