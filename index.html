@@ -13,6 +13,7 @@ html,body{margin:0;padding:0;background:#FDFCF8;-webkit-font-smoothing:antialias
 body{overflow-x:hidden}
 p,h1,h2,h3{margin:0}
 h1,h2{text-wrap:balance;overflow-wrap:break-word}
+img{max-width:100%}
 p{text-wrap:pretty}
 a{color:inherit;text-decoration:none}
 a:hover{color:#CA0000}
@@ -36,6 +37,9 @@ header nav a{min-height:44px;display:inline-flex;align-items:center}
 [data-g12]>[data-hero-centre]{text-align:center!important;align-items:center!important}
 [data-g12]>[data-hero-centre] h1{margin-left:auto!important;margin-right:auto!important}
 [data-hero-img] img,[data-portrait] img{height:auto!important;object-fit:contain!important}
+[data-portrait] img{max-height:none!important;width:100%!important}
+[data-hero-centre]{padding-left:0!important;padding-right:0!important}
+[data-hero-centre] p{white-space:normal!important}
 span[style*="nowrap"]{white-space:normal!important}
 br[data-db]{display:none}
 [data-scroll]{white-space:nowrap!important;max-width:100%!important}
@@ -74,28 +78,27 @@ header>div{row-gap:10px!important}
   </div>
 </header>
 
-<section data-screen-label="Hero" data-g12="1" data-wrap="1" style="position:relative;background:#F3A43A var(--B1) center/cover no-repeat;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(60px,8.6vh,108px) clamp(13.76px,3.12vw,38.48px)">
-  <div data-hero-centre="1" style="grid-column:1 / span 5;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(28px,4vh,48px) 0">
-    <h1 style="font:400 clamp(50px,5.9vw,100px)/0.96 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:9ch;overflow-wrap:normal;word-break:keep-all;margin-bottom:clamp(36px,4.6vh,52px)">LOVE MOVES.</h1>
-    <a href="#introduction" data-scroll="introduction" style="display:inline-block;background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.42em 0.78em 0.5em;border-radius:0;font:400 clamp(16px,2.1vw,23px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.016em;white-space:nowrap;width:fit-content;max-width:100%;align-self:center;outline-offset:4px" class="x1 x2">LOVE&nbsp;IT&nbsp;FORWARD</a>
+<section data-screen-label="Hero" style="position:relative;background:#F3A43A var(--B1) center/cover no-repeat;width:100%">
+<div data-g12="1" data-wrap="1" style="position:relative;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(60px,8.6vh,108px) clamp(13.76px,3.12vw,38.48px)">
+  <div data-hero-img="1" style="grid-column:1 / span 6;min-width:0;line-height:0">
+    <img data-img="I3" alt="A woman laughing, blue eyeshadow" style="width:100%;height:auto;display:block" />
   </div>
-  <div data-hero-img="1" style="grid-column:7 / span 6;min-width:0;line-height:0">
-    <img data-img="I3" alt="A woman laughing, blue eyeshadow" style="width:100%;height:clamp(320px,52vh,520px);object-fit:cover;object-position:center 32%;display:block" />
+  <div data-hero-centre="1" style="grid-column:7 / span 6;min-width:0;container-type:inline-size;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:clamp(28px,4vh,48px) 0">
+    <h1 style="font:400 max(40px,min(9.7cqi,88px))/1.05 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;white-space:nowrap;overflow-wrap:normal;word-break:keep-all;margin-bottom:clamp(16px,2.4vh,28px)">LOVE MOVES.</h1>
+    <p style="font:700 max(19px,min(5cqi,36px))/1.25 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.1em;color:#2F2B2B;margin:0 0 clamp(32px,5vh,60px);white-space:nowrap">SEE IT. LOVE IT. LIF IT.</p>
+    <a href="#introduction" data-scroll="introduction" style="display:inline-block;background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.04em 0.16em 0.1em;border-radius:0;font:400 max(28px,min(10.2cqi,100px))/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.024em;margin-top:0;white-space:nowrap;width:fit-content;max-width:none;overflow:visible;align-self:center;outline-offset:4px" class="x1 x2">LOVE&nbsp;IT&nbsp;FORWARD</a>
+    <p style="font:400 max(18px,min(3.9cqi,32px))/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.015em;color:#2F2B2B;margin-top:clamp(18px,2.6vh,28px)">Have love. Will share.</p>
   </div>
-</section>
-
-<section data-screen-label="Opening" style="padding:clamp(34px,5vh,58px) clamp(13.76px,3.12vw,38.48px) clamp(10px,1.6vh,16px)">
-  <p style="font:400 clamp(19px,1.8vw,25px)/1.45 'Apercu',Arial,Helvetica,sans-serif;max-width:60ch">A different way to give something you love.</p>
+</div>
 </section>
 
 <section data-screen-label="The Truth" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(40px,6vh,80px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:20ch;margin-bottom:0.45em">WE SHARE WHAT WE LOVE.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">A restaurant.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">A treatment.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">A book.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">A product we cannot stop talking about.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em;max-width:46ch">When something is that good, you want someone you care about to experience it too.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,14.4em);margin-bottom:0.45em">WE SHARE WHAT WE LOVE.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">A restaurant. A treatment. A book. Something we can&rsquo;t stop talking about.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">&ldquo;You have to try this.&rdquo;</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">We&rsquo;ve always shared the things we love with the people we love.</p>
+    <p style="font:400 clamp(22px,2vw,30px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;text-wrap:balance;margin-top:0.6em;max-width:24ch">With Love&nbsp;It&nbsp;Forward, &ldquo;you have to try this&rdquo; becomes &ldquo;this one&rsquo;s for you.&rdquo;</p>
   </div>
   <div style="grid-column:7 / span 6;min-width:0;line-height:0">
     <img data-img="I4" alt="Two friends laughing together" style="width:100%;height:auto;display:block" />
@@ -104,44 +107,30 @@ header>div{row-gap:10px!important}
 
 <section id="introduction" data-screen-label="The Product" style="padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:min(100%,920px);display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:30ch;text-wrap:balance;margin-bottom:0.45em">SOMETIMES &ldquo;YOU HAVE TO TRY THIS&rdquo; ISN&rsquo;T ENOUGH.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You want to put something behind the recommendation.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You tell them why.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You put something toward it.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They choose for themselves.</p>
-    <p style="font:400 clamp(22px,2vw,30px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;color:#CA0000;margin-top:0.6em;text-wrap:balance">The meaning of a recommendation. The freedom to choose.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,21.6em);text-wrap:balance;margin-bottom:0.45em">Who comes to <span style="background:#006298 var(--B3) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone;white-space:nowrap">MIND</span>?</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:62ch">Choose someone. Tell them why. Treat them to something at a brand you love.</p>
   </div>
 </section>
 
 <section data-screen-label="The Reveal" data-g12="1" data-wrap="1" style="background:#FFFFFF;display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(28px,4vh,44px) clamp(20px,2.4vw,34px);padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 5;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:16ch;margin-bottom:0.45em">SOMEONE CHOSE YOU.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Then you find out who.</p>
-    <p style="font:400 clamp(26px,2.5vw,38px)/1.16 'Romana BT',Georgia,serif;letter-spacing:-0.022em;color:#CA0000;margin:0.3em 0">It was Amy.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You read why.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,11.5em);margin-bottom:0.45em">SOMEONE <span style="background:#F3A43A var(--B1) center/cover;color:#2F2B2B;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">CHOSE</span> YOU.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">The invitation arrives anonymously from the brand and Love&nbsp;It&nbsp;Forward:</p>
+    <p style="font:400 clamp(26px,2.5vw,38px)/1.16 'Romana BT',Georgia,serif;letter-spacing:-0.022em;margin:0.3em 0">&ldquo;Someone thought of you.&rdquo;</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They choose to reveal who thought of them.</p>
+    <p style="font:400 clamp(26px,2.5vw,38px)/1.16 'Romana BT',Georgia,serif;letter-spacing:-0.022em;margin:0.3em 0">&ldquo;It was Amy.&rdquo;</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:44ch">They read the personal note and choose something for themselves at the brand.</p>
   </div>
 
   <div style="grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:clamp(20px,2.8vh,28px)">
     <div data-r="1" style="opacity:0;filter:blur(14px);transform:translateY(10px);transition:opacity .9s ease,filter 1.1s cubic-bezier(.2,.75,.2,1),transform 1.1s cubic-bezier(.2,.75,.2,1);line-height:0">
       <img data-img="I5" alt="A handwritten note from Amy" style="width:100%;height:auto;display:block" />
     </div>
-    <div style="display:flex;flex-direction:column;gap:0.3em;max-width:52ch">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">The relationship arrives first.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">What you choose is up to you.</p>
-    </div>
   </div>
 </section>
 
 <section data-screen-label="Trust headline" style="background:#F3A43A var(--B1) center/cover no-repeat;padding:clamp(60px,10vh,132px) clamp(13.76px,3.12vw,38.48px)">
-  <h2 data-wrap="1" style="font:400 clamp(34px,4.2vw,72px)/1.02 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:16ch;text-align:center;margin-left:auto;margin-right:auto;">THE TRUST WAS ALREADY THERE.</h2>
-</section>
-
-<section data-screen-label="Why It Works" style="padding:clamp(44px,6.6vh,82px) clamp(13.76px,3.12vw,38.48px)">
-  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.3em">
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You know the person.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">You know why they sent it.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Love&nbsp;It&nbsp;Forward gives that trust somewhere to go.</p>
-  </div>
+  <h2 data-wrap="1" style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:min(100%,11.5em);text-align:center;margin-left:auto;margin-right:auto;">THE TRUST WAS ALREADY THERE.</h2>
 </section>
 
 <section data-screen-label="The Loop" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.4vw,34px);padding:clamp(40px,6vh,80px) clamp(13.76px,3.12vw,38.48px)">
@@ -149,43 +138,24 @@ header>div{row-gap:10px!important}
     <img data-img="I6" alt="Two smiling women cheek to cheek" style="width:100%;height:auto;display:block" />
   </div>
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(22px,2vw,30px)/1.14 'Romana BT',Georgia,serif;letter-spacing:-0.02em;margin-bottom:0.45em">IF THEY LOVE IT TOO</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They Love&nbsp;It&nbsp;Forward.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They choose who.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They tell them why.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They pass the experience on.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">Or they simply enjoy it.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">No pressure.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">No obligation.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000;margin-top:0.6em">Love moves.</p>
-  </div>
-</section>
-
-<section data-screen-label="What You Started" style="padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
-  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(30px,3.2vw,50px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:20ch;margin-bottom:0.45em">SEE WHAT YOU STARTED.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They found it.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They chose something.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They sent love back.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">If they Love&nbsp;It&nbsp;Forward, <span style="color:#CA0000">you see that too.</span></p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">Who comes after them stays private.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">What they wrote stays private.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">You only see that something you started kept moving.</p>
-  </div>
-</section>
-
-<section data-screen-label="What Makes This Different" style="padding:clamp(20px,3vh,36px) clamp(13.76px,3.12vw,38.48px) clamp(52px,8vh,100px)">
-  <div data-r="1" data-wrap="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);max-width:62ch;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:22ch;margin-bottom:0.45em"><span style="display:block">NO INCENTIVE.</span><span style="display:block">NO POINTS.</span><span style="display:block">NO REFERRAL CODE.</span></h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Just an easy way to do something good for someone else.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,14.4em);margin-bottom:0.45em">LOOK WHAT YOU STARTED.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">They got a surprise.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Someone thought of them.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">It was you.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em;max-width:46ch">They read your note. They felt the love. They sent some back.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:46ch">And it felt so good, they Loved&nbsp;It&nbsp;Forward.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:46ch">Now someone else gets to feel it too.</p>
+    <p style="font:400 clamp(22px,2vw,30px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;text-wrap:balance;margin-top:0.6em">You know what you did.</p>
   </div>
 </section>
 
 <section data-screen-label="Close" style="position:relative;background:#CA0000 var(--B2) center/cover no-repeat;padding:clamp(76px,11vh,136px) clamp(13.76px,3.12vw,38.48px)">
   <div style="position:absolute;inset:0;background:rgba(176,0,0,.52);pointer-events:none"></div>
   <div data-wrap="1" style="position:relative;max-width:58ch;display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.75em">
-    <h2 style="font:400 clamp(32px,3.8vw,60px)/1.04 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:18ch;line-height:1.14;padding-top:0.08em;margin-bottom:0.2em">CULTURE TRAVELS THROUGH PEOPLE.</h2>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:min(100%,13.0em);padding-top:0.08em;margin-bottom:0.2em">CULTURE TRAVELS THROUGH PEOPLE.</h2>
     <p style="font:400 clamp(17px,1.4vw,19px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">So does love.</p>
+    <p style="font:400 clamp(17px,1.4vw,19px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">No points. No referral rewards. No obligation.</p>
+    <p style="font:700 13px/1.4 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.02em;color:#FFFFFF;margin-top:0.4em">Have love. Will share.</p>
     <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px 14px;margin-top:0.6em">
       <a href="#brands" style="background:#FFFFFF;color:#CA0000;padding:16px 24px;border-radius:2px;font:700 12px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em" class="x3">FOR BRANDS</a>
       <a href="#about" style="border:1px solid #FFFFFF;color:#FFFFFF;padding:16px 24px;border-radius:2px;font:700 12px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em" class="x4">ABOUT LIF</a>
@@ -226,27 +196,20 @@ header>div{row-gap:10px!important}
 
 <section data-screen-label="Hero" style="position:relative;background:#006298 var(--B3) center/cover no-repeat">
   <div style="position:absolute;inset:0;background:rgba(0,78,128,.54);pointer-events:none"></div>
-  <div data-wrap="1" style="position:relative;padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
-    <h1 style="font:400 clamp(28px,2.9vw,46px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;color:#FFFFFF;max-width:26ch;text-align:center;margin:0 auto 1em">YOU HAVE AN ACQUISITION CHANNEL YOU&rsquo;VE NEVER BEEN ABLE TO SEE.</h1>
-    <div style="max-width:56ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Your happiest customers already share what they love about you.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">The treatment. The product. The restaurant. The experience.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Most of it happens outside your business.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Love&nbsp;It&nbsp;Forward makes it visible.</p>
+  <div data-wrap="1" style="position:relative;padding:clamp(72px,11vh,140px) clamp(13.76px,3.12vw,38.48px)">
+    <h1 style="font:400 clamp(32px,3.6vw,58px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.026em;color:#FFFFFF;max-width:min(100%,1000px);text-align:center;margin:0 auto 0.9em"><span style="display:block;text-wrap:balance">YOUR BIGGEST UNTAPPED GROWTH OPPORTUNITY?</span><span style="display:block;text-wrap:balance">THE CUSTOMERS YOU ALREADY HAVE.</span></h1>
+    <div style="max-width:60ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Every day, your customers introduce people they love to brands they love. These personal recommendations are already driving growth, but much of that behaviour remains invisible, unmeasured and left to chance.</p>
     </div>
   </div>
 </section>
 
 <section data-screen-label="The Invisible Channel">
   <div data-wrap="1" data-g12="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:start;gap:clamp(26px,3.6vh,40px) clamp(24px,3.4vw,56px);padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
-    <h2 data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 5;min-width:0;font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em">YOU SEE WHO BOUGHT. YOU DON&rsquo;T SEE WHO BROUGHT THEM.</h2>
+    <h2 data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 6;min-width:0;font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;text-wrap:balance"><span style="display:block;text-wrap:balance">YOU SEE WHO BOUGHT.</span><span style="display:block;text-wrap:balance">YOU DON&rsquo;T SEE WHO BROUGHT THEM.</span></h2>
     <div data-r="1" data-r-delay="120" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">Someone recommends you to a friend.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">That friend buys.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">You see the purchase.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">You lose the introduction behind it.</p>
-      <p style="font:400 clamp(18px,1.45vw,23px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;color:#CA0000;margin-top:0.6em;letter-spacing:-0.03em;text-wrap:balance">CUSTOMER ADVOCACY ALREADY EXISTS.</p>
-      <p style="font:400 clamp(18px,1.45vw,23px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;color:#CA0000;letter-spacing:-0.03em;text-wrap:balance">CUSTOMER-FUNDED GROWTH IS THE MISSING CHANNEL.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">Meanwhile, brands continue paying to acquire new customers.</p>
+      <p style="font:400 clamp(18px,1.45vw,23px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;margin-top:0.6em;text-wrap:balance">An entire growth opportunity, hiding in plain sight.</p>
     </div>
   </div>
 </section>
@@ -254,17 +217,12 @@ header>div{row-gap:10px!important}
 <section data-screen-label="What LIF Is" style="position:relative;background:#006298 var(--B3) center/cover no-repeat">
   <div style="position:absolute;inset:0;background:rgba(0,78,128,.54);pointer-events:none"></div>
   <div data-wrap="1" style="position:relative;padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
-    <h2 style="font:400 clamp(30px,3.4vw,54px)/1.05 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:24ch;text-align:center;text-wrap:balance;margin:0 auto 1em">LOVE&nbsp;IT&nbsp;FORWARD IS A <span style="background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone;white-space:nowrap">NEW CHANNEL</span>.</h2>
-    <div style="max-width:56ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Not a referral program.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Not a gift card.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Not a loyalty mechanic.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;margin-top:0.6em">A customer shares something they love.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">They tell someone why.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">They put something behind it.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">The receiver chooses for themselves.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;margin-top:0.6em">For the brand, the introduction becomes visible.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">The relationship arrives first.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:min(100%,1040px);text-align:center;margin:0 auto 0.8em"><span style="display:block;text-wrap:balance">THE BEHAVIOUR WAS ALWAYS THERE.</span><span style="display:block;text-wrap:balance">THE <span style="background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone;white-space:nowrap">CHANNEL</span> WASN&rsquo;T.</span></h2>
+    <div style="max-width:58ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF">Word of mouth has always moved people toward the brands they love. But commerce has built its infrastructure around transactions, not the personal introductions behind them.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;margin-top:0.6em">Love&nbsp;It&nbsp;Forward changes that.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;margin-top:0.6em">We&rsquo;re not simply revealing where customers came from. We&rsquo;re building the infrastructure that lets brands activate, measure and build on an existing human behaviour.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#FFFFFF;margin-top:0.6em;font-weight:700">That&rsquo;s bigger than attribution.</p>
     </div>
   </div>
 </section>
@@ -275,10 +233,9 @@ header>div{row-gap:10px!important}
       <img data-img="I7" alt="A woman holding her palms, painted with eyes, in front of her face" style="width:100%;height:auto;display:block" />
     </div>
     <div data-r="1" data-r-delay="120" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-      <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:20ch;margin-bottom:0.45em">AI CAN SCALE A RECOMMENDATION.</h2>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch;color:#CA0000">It can&rsquo;t replace who you trust.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">The more automated the world becomes, the more the source matters.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">When a brand comes through someone you trust, the trust gets there first.</p>
+      <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,15.8em);margin-bottom:0.45em"><span style="display:block;text-wrap:balance">AI CAN WRITE THE REVIEW.</span><span style="display:block;text-wrap:balance">IT CAN&rsquo;T CHOOSE YOU.</span></h2>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">As commerce becomes more automated, personal recommendations carry something an algorithm cannot manufacture: the feeling that someone you trust thought of you.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch;margin-top:0.6em">That&rsquo;s the difference between being targeted and being chosen.</p>
     </div>
   </div>
 </section>
@@ -286,13 +243,13 @@ header>div{row-gap:10px!important}
 <section data-screen-label="The Loop" style="background:#FDFCF8">
   <div data-wrap="1" data-g12="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(24px,3.4vw,56px);padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
     <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-      <h2 style="font:400 clamp(28px,2.9vw,44px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:24ch;margin-bottom:0.45em">AND IF THE RECEIVER LOVES IT TOO</h2>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">They Love&nbsp;It&nbsp;Forward.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">One introduction becomes another.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch;margin-top:0.6em">Or it stops there.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">No pressure.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">No obligation.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch;margin-top:0.6em"><span style="font-weight:700;color:#CA0000">The growth comes from voluntary behaviour.</span></p>
+      <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,15.8em);margin-bottom:0.45em">THE CUSTOMER FUNDS THE INTRODUCTION.</h2>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">Someone who loves your brand chooses someone they care about, writes a personal note and purchases a Love&nbsp;It&nbsp;Forward for them.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch;margin-top:0.6em">An unexpected invitation arrives from your brand and Love&nbsp;It&nbsp;Forward.</p>
+      <p style="font:400 clamp(22px,2vw,30px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;margin:0.3em 0">&ldquo;Someone thought of you.&rdquo;</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">The recipient discovers who chose them and why, then chooses something for themselves at your brand.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch;margin-top:0.6em">The customer pays for the introduction. Your brand receives the payment and has the opportunity to earn a new customer.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch;margin-top:0.6em">No referral rewards. Just people bringing people.</p>
     </div>
     <div style="grid-column:7 / span 6;min-width:0;line-height:0">
       <img data-img="I8" alt="Several hands linked together in a chain" style="width:100%;height:auto;display:block" />
@@ -302,53 +259,34 @@ header>div{row-gap:10px!important}
 
 <section data-screen-label="What You See">
   <div data-wrap="1" style="padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
-    <h2 data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:24ch;text-align:center;margin:0 auto 1em">FOR THE FIRST TIME, YOU SEE WHAT THE INTRODUCTION <span style="background:#006298 var(--B3) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">CREATES</span>.</h2>
-    <div style="max-width:46ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Who introduced whom.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Who became a new customer.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">What they bought.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Whether they came back.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Whether they Loved&nbsp;It&nbsp;Forward.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">The introduction stays attached to what happens next.</p>
+    <h2 data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,17.3em);text-align:center;text-wrap:balance;margin:0 auto 1em">WORD OF MOUTH. NOW <span style="background:#006298 var(--B3) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">MEASURABLE</span>.</h2>
+    <div style="max-width:56ch;margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Love&nbsp;It&nbsp;Forward gives brands visibility into the introductions their customers create.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">See how many LIFs are sent, opened and redeemed. Understand how many recipients are new customers, what they spend beyond their LIF and whether they return.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">When a recipient independently purchases a new LIF for someone else, the giving can continue.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:0.6em">Brands see aggregate results. Personal notes and private relationships stay private.</p>
     </div>
   </div>
 </section>
 
-<section data-screen-label="Not What You Think" style="background:#FFFFFF">
-  <div data-wrap="1" data-g12="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:start;gap:clamp(26px,3.6vh,40px) clamp(24px,3.4vw,56px);padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
-    <h2 data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 5;min-width:0;font:400 clamp(26px,2.7vw,40px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em">THIS ISN&rsquo;T A GIFT CARD.</h2>
-    <div data-r="1" data-r-delay="120" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">A gift card tracks value to redemption.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">Love&nbsp;It&nbsp;Forward tracks the introduction beyond it.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch;margin-top:0.6em">The person.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">The reason.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">The reveal.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">The gratitude.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:56ch">The continuation.</p>
-    </div>
-  </div>
-</section>
 
 <section data-screen-label="The Setup" style="background:#F3A43A var(--B1) center/cover no-repeat">
   <div data-wrap="1" style="padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
     <div style="max-width:60ch;display:flex;flex-direction:column;gap:0.3em">
-      <h2 style="font:400 clamp(26px,2.7vw,40px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em;color:#2F2B2B;max-width:20ch;margin-bottom:0.45em">YOUR COMMERCE STAYS YOURS.</h2>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">Checkout. Payments. Inventory. Fulfilment. Returns.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">All of it stays where it is.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch;margin-top:0.6em">Love&nbsp;It&nbsp;Forward carries the person, the reason, the funded value, the reveal, the gratitude and the attribution.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">Private details stay private.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">Love&nbsp;It&nbsp;Forward sits on top of what you already have.</p>
-      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch;margin-top:0.6em">For pilot brands, setup is on us.</p>
+      <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em;color:#2F2B2B;max-width:min(100%,14.4em);margin-bottom:0.45em">BUILT TO GO WHERE LOVE GOES.</h2>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">Products. Experiences. Services.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch">Wherever people share what they love, Love&nbsp;It&nbsp;Forward belongs.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch;margin-top:0.6em">One introduction can inspire another. One brand can lead to the next.</p>
+      <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;max-width:56ch;font-weight:700;margin-top:0.6em">The opportunity doesn&rsquo;t end with one brand, one industry or one platform.</p>
     </div>
   </div>
 </section>
 
 <section data-screen-label="Close">
   <div data-wrap="1" style="padding:clamp(56px,9vh,116px) clamp(13.76px,3.12vw,38.48px);display:flex;flex-direction:column;align-items:center;text-align:center;gap:0.75em">
-    <h2 style="font:400 clamp(30px,3.4vw,54px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:20ch;margin-bottom:0.45em"><span style="display:block">TRANSACTIONS HAVE INFRASTRUCTURE.</span><span style="display:block">INTRODUCTIONS NEVER DID.</span></h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:44ch">People keep the meaning.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:44ch">The brand sees the movement.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:min(100%,900px);margin-bottom:0.3em"><span style="display:block;text-wrap:balance">YOUR BEST CUSTOMERS,</span><span style="display:block;text-wrap:balance">CHOOSING YOUR NEXT ONES.</span></h2>
     <button type="button" data-pilot="open" style="margin-top:0.6em;background:#CA0000;color:#FFFFFF;border:0;padding:18px 28px;border-radius:2px;font:700 13px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em;cursor:pointer" class="x5">PILOT WITH US</button>
+    <p style="font:700 13px/1.4 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.02em;color:#CA0000;margin-top:0.2em">Have love. Will share.</p>
   </div>
 </section>
 
@@ -414,22 +352,20 @@ header>div{row-gap:10px!important}
 
 <section data-screen-label="Hero" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:center;gap:clamp(26px,3.6vh,40px) clamp(20px,2.8vw,44px);padding:clamp(44px,6.4vh,78px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" style="opacity:0;transform:translateY(18px);transition:opacity 1s ease,transform 1.2s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h1 style="font:400 clamp(32px,3.6vw,58px)/1.04 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:20ch">I SAW LOVE <span style="background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">MOVE</span>.</h1>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">Before Love&nbsp;It&nbsp;Forward was a company, I watched what happened when giving was made easy.</p>
+    <h1 style="font:400 clamp(32px,3.6vw,58px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:min(100%,14.4em)">I SAW LOVE <span style="background:#CA0000 var(--B2) center/cover;color:#FFFFFF;padding:0.02em 0.16em 0.1em;box-decoration-break:clone;-webkit-box-decoration-break:clone">MOVE</span>.</h1>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:52ch">I&rsquo;ve spent my career building brands and communities around things people love.</p>
   </div>
-  <div data-portrait="1" style="grid-column:7 / span 6;min-width:0;line-height:0">
-    <img data-img="I9" alt="Amy Krofchick" style="width:100%;height:clamp(320px,50vh,480px);object-fit:cover;object-position:center 26%;display:block" />
+  <div data-portrait="1" style="grid-column:7 / span 6;min-width:0;line-height:0;display:flex;flex-direction:column;align-items:center;text-align:center">
+    <img data-img="I9" alt="Amy Krofchick" style="width:100%;height:auto;display:block" />
     <p style="font:400 clamp(15px,1.2vw,16.5px)/1.5 'Apercu',Arial,Helvetica,sans-serif;margin-top:14px">Amy Krofchick</p>
-    <p style="font:400 clamp(15px,1.2vw,16.5px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#CA0000">Founder &amp; CEO, Love&nbsp;It&nbsp;Forward</p>
+    <p style="font:400 clamp(15px,1.2vw,16.5px)/1.5 'Apercu',Arial,Helvetica,sans-serif">Founder &amp; CEO, Love&nbsp;It&nbsp;Forward</p>
   </div>
 </section>
 
 <section data-screen-label="Who I Am" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:start;gap:clamp(26px,3.6vh,40px) clamp(20px,2.8vw,44px);padding:clamp(10px,1.8vh,24px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 9;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,3vw,46px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;margin-bottom:0.45em">I&rsquo;M AMY KROFCHICK.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">I co-founded The NOW, a wellness company that grew to more than 100 locations across the U.S.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">I learned what it looks like when people genuinely love an experience.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch;color:#CA0000">I wanted to make it easier to pass that experience on.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">At The NOW, an express massage brand I co-created, I watched customers introduce people they loved to an experience they loved.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch;margin-top:0.6em">Our best growth was already happening. We just couldn&rsquo;t see the introductions behind it.</p>
   </div>
 </section>
 
@@ -438,47 +374,37 @@ header>div{row-gap:10px!important}
     <img data-img="I10" alt="Lifehood, Los Angeles" style="width:100%;height:auto;display:block" />
   </div>
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:7 / span 6;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(26px,2.6vw,40px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em;max-width:min(100%,30ch);text-wrap:balance;margin-bottom:0.45em">BEFORE <span style="white-space:nowrap">LOVE&nbsp;IT&nbsp;FORWARD</span>, THERE WAS LIFEHOOD.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:54ch">Los Angeles. 2020.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:min(100%,64ch)">I built Lifehood around a simple belief: make it easy to do something good for someone else.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:min(100%,64ch);margin-top:0.6em">Customers had an experience they loved.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:min(100%,64ch)">At checkout, we gave them a simple way to pass that experience on.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.024em;max-width:min(100%,30ch);text-wrap:balance;margin-bottom:0.45em">THEN CAME LIFEHOOD.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:54ch">At Lifehood, the wellness centre I built in Los Angeles, I tested a simple idea in 2020.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:54ch;margin-top:0.6em">After a treatment, customers could buy one for someone else. When that person came in, they could choose to do the same.</p>
   </div>
 </section>
 
 <section data-screen-label="What I Saw" style="position:relative;background:#F3A43A var(--B1) center/cover no-repeat;padding:clamp(50px,7.8vh,102px) clamp(13.76px,3.12vw,38.48px)">
-  <div data-wrap="1" style="max-width:58ch;display:flex;flex-direction:column;gap:0.3em;text-align:center">
-    <h2 style="font:400 clamp(30px,3.4vw,54px)/1.05 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#2F2B2B;max-width:20ch;text-align:center;margin-left:auto;margin-right:auto;margin-bottom:0.6em">THE RECEIVER BECAME THE GIVER.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B">143 people participated.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B">Nearly 70% chose to send one on.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;margin-top:0.6em">No incentive.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B">No discount.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B">No referral reward.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B;margin-top:0.6em">I didn&rsquo;t manufacture the behaviour.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;color:#2F2B2B">I gave it somewhere to go.</p>
+  <div data-wrap="1" style="max-width:min(100%,1040px);margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
+    <p style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;color:#2F2B2B;text-align:center"><span style="display:block;text-wrap:balance">143 PEOPLE.</span><span style="display:block;text-wrap:balance">NEARLY 70% BOUGHT ONE FOR SOMEONE ELSE.</span><span style="display:block;text-wrap:balance">NO INCENTIVE.</span></p>
   </div>
 </section>
 
 <section data-screen-label="The Unlock" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:start;gap:clamp(26px,3.6vh,40px) clamp(20px,2.8vw,44px);padding:clamp(48px,7.4vh,96px) clamp(13.76px,3.12vw,38.48px)">
   <div data-r="1" style="opacity:0;transform:translateY(16px);transition:opacity 1s ease,transform 1.1s cubic-bezier(.2,.75,.2,1);grid-column:1 / span 7;min-width:0;display:flex;flex-direction:column;gap:0.3em">
-    <h2 style="font:400 clamp(28px,3vw,46px)/1.08 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:22ch;margin-bottom:0.45em">THE BEHAVIOUR WAS THERE. THE PRODUCT WASN&rsquo;T.</h2>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">Lifehood showed me what could happen inside one business.</p>
-    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">Love&nbsp;It&nbsp;Forward gives that behaviour infrastructure across brands.</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.026em;max-width:min(100%,15.8em);margin-bottom:0.45em"><span style="white-space:nowrap;color:#CA0000">LOVE&nbsp;IT&nbsp;FORWARD</span> WAS BORN.</h2>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch">Lifehood showed me what could happen when community and kindness became part of the experience.</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch;margin-top:0.6em">What if that feeling could travel beyond one business?</p>
+    <p style="font:400 clamp(16.5px,1.32vw,18px)/1.5 'Apercu',Arial,Helvetica,sans-serif;max-width:58ch;margin-top:0.6em">Across brands and between people, one act of giving could inspire another.</p>
   </div>
 </section>
 
 <section data-screen-label="Why LIF" style="position:relative;background:#CA0000 var(--B2) center/cover no-repeat;padding:clamp(50px,7.8vh,102px) clamp(13.76px,3.12vw,38.48px)">
   <div style="position:absolute;inset:0;background:rgba(176,0,0,.52);pointer-events:none"></div>
   <div data-wrap="1" style="position:relative;max-width:min(100%,1180px);margin:0 auto;display:flex;flex-direction:column;gap:0.3em;text-align:center">
-    <h2 style="font:400 clamp(30px,3.4vw,54px)/1.05 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:22ch;text-align:center;margin-left:auto;margin-right:auto;margin-bottom:0.6em">LOVE&nbsp;IT&nbsp;FORWARD EXISTS TO MAKE GIVING EASIER.</h2>
-    <p style="font:400 clamp(22px,2.05vw,31px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;color:#FFFFFF;text-wrap:balance">Commerce has spent decades asking, &ldquo;What do I get?&rdquo;</p>
-    <p style="font:400 clamp(22px,2.05vw,31px)/1.2 'Romana BT',Georgia,serif;letter-spacing:-0.02em;color:#FFFFFF;text-wrap:balance">I wanted to build something that made it easier to ask, &ldquo;What can I give?&rdquo;</p>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;color:#FFFFFF;max-width:min(100%,1000px);text-align:center;margin-left:auto;margin-right:auto"><span style="display:block;text-wrap:balance">WE DIDN&rsquo;T INVENT GENEROSITY.</span><span style="display:block;text-wrap:balance">WE BUILT SOMEWHERE FOR IT TO GO.</span></h2>
   </div>
 </section>
 
 <section data-screen-label="Close" data-g12="1" data-wrap="1" style="display:grid;grid-template-columns:repeat(12,1fr);align-items:end;gap:clamp(26px,3.6vh,40px) clamp(20px,2.8vw,44px);padding:clamp(52px,8vh,104px) clamp(13.76px,3.12vw,38.48px)">
   <div style="grid-column:1 / -1;min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:clamp(20px,3vh,30px)">
-    <h2 style="font:400 clamp(30px,3.4vw,54px)/1.06 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:18ch">HAVE LOVE. WILL SHARE.</h2>
+    <h2 style="font:400 clamp(28px,2.9vw,44px)/1.1 'Romana BT',Georgia,serif;letter-spacing:-0.028em;max-width:min(100%,13.0em)">HAVE LOVE. WILL SHARE.</h2>
     <button type="button" data-pilot="open" style="background:#CA0000;color:#FFFFFF;border:0;padding:18px 28px;border-radius:2px;font:700 13px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em;cursor:pointer" class="x8">PILOT WITH US</button>
   </div>
 </section>
