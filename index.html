@@ -358,7 +358,6 @@ header>div{row-gap:10px!important}
         </label>
         <button type="submit" style="margin-top:6px;background:#CA0000;color:#FFFFFF;border:0;padding:16px 24px;border-radius:2px;font:700 12.5px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em;cursor:pointer" class="x7">START THE PILOT</button>
         <p data-pilot-status="1" role="status" aria-live="polite" style="font:400 12.5px/1.45 'Apercu',Arial,Helvetica,sans-serif;color:rgba(47,43,43,.7);margin:2px 0 0;display:none"></p>
-        <p data-pilot-note="1" style="font:400 12.5px/1.45 'Apercu',Arial,Helvetica,sans-serif;color:rgba(47,43,43,.7);margin:2px 0 0">Preview: this form is being tested. Submissions are not yet confirmed to reach our inbox.</p>
       </form>
     </div>
   </div>
@@ -502,7 +501,6 @@ header>div{row-gap:10px!important}
         </label>
         <button type="submit" style="margin-top:6px;background:#CA0000;color:#FFFFFF;border:0;padding:16px 24px;border-radius:2px;font:700 12.5px/1 'Apercu',Arial,Helvetica,sans-serif;letter-spacing:.13em;cursor:pointer" class="x7">START THE PILOT</button>
         <p data-pilot-status="1" role="status" aria-live="polite" style="font:400 12.5px/1.45 'Apercu',Arial,Helvetica,sans-serif;color:rgba(47,43,43,.7);margin:2px 0 0;display:none"></p>
-        <p data-pilot-note="1" style="font:400 12.5px/1.45 'Apercu',Arial,Helvetica,sans-serif;color:rgba(47,43,43,.7);margin:2px 0 0">Preview: this form is being tested. Submissions are not yet confirmed to reach our inbox.</p>
       </form>
     </div>
   </div>
@@ -623,7 +621,7 @@ header>div{row-gap:10px!important}
     var body=new URLSearchParams(new FormData(form)).toString();
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body})
       .then(function(res){if(!res.ok)throw new Error(res.status);
-        Array.prototype.forEach.call(form.querySelectorAll('label,button[type=submit],[data-pilot-note]'),function(el){el.style.display='none';});
+        Array.prototype.forEach.call(form.querySelectorAll('label,button[type=submit]'),function(el){el.style.display='none';});
         status.textContent='Thank you. We\u2019ll be in touch soon.';status.style.display='block';})
       .catch(function(){status.textContent='Something went wrong. Please try again, or email info@loveitforward.co.';status.style.display='block';if(btn){btn.disabled=false;btn.style.opacity='';}});
   });
